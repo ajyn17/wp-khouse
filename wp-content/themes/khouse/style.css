@@ -1,0 +1,168 @@
+/*
+Theme Name: Khouse
+Authro: Jin Ahn
+*/
+/*General layout*/
+body{
+    font-family: raleway, noticia-text;
+    font-size: 14px;
+    color: black;
+        margin:0px 0px 0px 0px;
+    padding:0px;
+}
+div.container{
+    margin: none;
+}
+.site-header{
+    font-family: 'raleway';
+    color:crimson;          
+    border-bottom: 2px grey;
+    text-align: center;
+    padding: 12em;
+
+}
+.site-header h1{
+    text-decoration: none;
+    text-transform: uppercase;    
+    color:crimson;
+    font-size: 3em;
+    float:center;
+    padding: 10px;
+    margin-top: 0px;
+    margin: 0.5em;
+    line-height: 1.1;
+    font-weight:200;
+    
+}
+.site-header h1 a{
+    color:crimson;
+}
+div.container-header{
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: lightgray;
+    background-image: url(img/MG_6064.jpg);
+    background-position: center;
+    background-size:cover;
+
+}
+div.container-header nav{
+    background-color:black;
+}
+div.container-header nav ul li a:link,
+div.container-header ul li a:visited{
+    color: dimgrey;
+}
+div.container-header ul li a:hover{
+    color: white;
+}
+div.container-header h5{
+    background-color: white;
+    color:darkgreen;
+    padding-top:0px;
+}
+.site-nav{
+    font-family: raleway;
+    font-size: 20px;
+}
+
+.site-nav ul {
+    margin:0;
+    padding:0;
+    *zoom: 1; 
+}
+.site-nav ul:before, 
+.site-nav ul:after { 
+    content: ""; display: table; 
+}
+.site-nav ul:after {
+    clear: both;
+}
+.site-nav ul li{
+    list-style:none;
+    float: right;
+    display: block;
+    padding: 10px 10px;
+    border:none;
+}
+
+
+
+.post{
+    color:purple;
+}
+
+a:link,
+a:visited
+{
+    color:dodgerblue;
+    text-decoration: none;
+}
+    
+p{
+    line-height: 1.64em;
+}
+article.post{
+    margin:auto;
+    padding:0px 15px;
+}
+article.content{
+    padding: 0px 60px 10px 15px;
+    text-align:justify;
+    font-family: "courier new";
+}
+article.page{
+    margin:auto;
+    padding:0px 15px;
+}
+
+/*Info-Box*/
+div.info-box{
+    width: 30%;
+    float:right;
+    margin: 0 0 30px 30px;
+    padding: 20px;
+    background-color:#EEE;    
+}
+div.info-box h4{
+    margin-bottom: 5px;
+    font-family: verdana;
+    color:aqua;
+}
+div.info-box p{
+    font-size:15px;
+}
+/*Clearfix*/
+.clearfix:before,
+.clearfix:after{
+    content: ""; display:table;    
+}
+.clearfix:after{
+    clear:both;
+}
+.clearfix{
+    *zoom:1;
+}
+div.title-column{
+    width:30%;
+    float:left:
+}
+div.text-column{
+    width:70%;
+    float:right;
+}
+.site-footer{
+    font-family: raleway;
+    color:black;
+    border-top: 2px dotted grey;
+}
+.site-footer nav{
+    margin-right:10px;
+    padding-right:0px;
+    background-color:transparent;
+}
+.site-footer nav ul li{
+    padding-right:10px;
+    margin: 0px; 
+    font-size: x-small;
+}
