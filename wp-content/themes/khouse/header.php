@@ -26,9 +26,10 @@
                 
                <?php wp_nav_menu($args); ?>
             </nav>
-            <h5>
-              <?php if(is_page('Sample Page')){?>
-               HHEELLLOO
-              <?php }?>
-            </h5>
-        </div>
+
+        </div>           
+          <h5>
+          <?php if(is_page('Sample Page')){?>
+           THIS IS A SAMPLE WAHOO    
+           <?php }?>
+        </h5>

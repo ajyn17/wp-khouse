@@ -86,16 +86,61 @@ div.container-header h5{
     border:none;
 }
 
-
-
+.child-links{
+    font-family: "times new roman";
+    margin-bottom:15px;
+}
+.child-links ul {
+    margin:0;
+    padding:0;
+    *zoom: 1; 
+}
+.child-links ul:before, 
+.child-links ul:after { 
+    content: ""; display: table; 
+}
+.child-links ul:after {
+    clear: both;
+}
+.child-links ul li{
+    list-style:none;
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    border:none;
+}
+.child-links ul li a:link,
+.child-links ul li a:visited{
+    color:orangered;
+    font-size:18px;
+}
+.child-links .parent-link{
+    float:left;
+    padding:10px;
+    padding-right:12px;
+    border-right: 1px solid #DDD;
+    font-weight: bold;    
+}
+.child-links .parent-link a:link,
+.child-links .parent-link a:visited{
+    color:grey;  
+    font-size: 25px;
+}
+.child-links .current_page_item a:link,
+.child-links .current_page_item a:visited,
+.child-links .current_page_ancestor a:link,
+.child-links .current_page_ancestor a:visited{
+    border-bottom: 3px dotted #DDD;
+    color:black;
+    
+}
 .post{
-    color:purple;
+    color:darkgrey;
 }
 
 a:link,
-a:visited
-{
-    color:dodgerblue;
+a:visited{
+    color:lightcoral;
     text-decoration: none;
 }
     

@@ -2,18 +2,25 @@
 get_header();
     if (have_posts()):
         while (have_posts()) : the_post(); ?>
-            <article class="page">
-                <?php
-                    $args = array (
-                        'child_of' => $post->ID,
-                        'title_li' => ''
-                    );
+             <article class="post">
+                <article class="page">
+                
+                <nav class="site-nav child-links clearfix">
+                    <span class="parent-link"><a href="<?php echo get_the_permalink(get_parent_page_id());?>"><?php echo get_the_title(get_parent_page_id()); ?></a></span>
+                    <ul>
+                    <?php
+                        $args = array (
+                            'child_of' => get_parent_page_id(),
+                            'title_li' => ''
+                        );
 
-                ?>
-                <?php wp_list_pages($args); ?>
-                
-                
-                <h2><?php the_title(); ?></h2>
+                    ?>
+                    <?php wp_list_pages($args); ?>
+                    </ul>
+                </nav>
+                <?php if (the_title('','',false) != get_the_title(get_parent_page_id())):?>
+                    <h2><?php the_title(); ?></h2>
+                <?php endif; ?>
                 <article class="content">
                     <?php the_content(); ?>
                 </article>

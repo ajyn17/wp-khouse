@@ -30,14 +30,6 @@ get_header();
         while (have_posts()) : the_post(); ?>
             <article class="post">
                 <article class="page">
-                <?php
-                    $args = array (
-                        'child_of' => $post->ID,
-                        'title_li' => ''
-                    );
-
-                ?>
-                <?php wp_list_pages($args); ?>
                 
                 
                 <h2><?php the_title(); ?></h2>
